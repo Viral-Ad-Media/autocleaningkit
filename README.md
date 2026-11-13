@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Auto Cleaning Kit
 
-## Getting Started
+The autocleaningkit.com site, rebuilt from the 19 Oct 2026 WordPress backup with **Next.js 16**, **Tailwind CSS 4**, **Neon Postgres** (via Drizzle ORM) and **Better Auth**.
 
-First, run the development server:
+## What came over from WordPress
+
+The backup had no database dump, so only what lived in files could be recovered:
+
+| Recovered | Source in the backup |
+| --- | --- |
+| 14 article titles, URLs and dates, 6 categories | Rank Math sitemap cache (`wp-content/uploads/rank-math/*.xml`) |
+| 73 product picks (name + image) across the round-ups | Images attached to each article in the same sitemaps |
+| 90 images, logo, home-page banners | `wp-content/uploads` (resized to max 1600px) |
+| Brand colours and the Hind typeface | Logo artwork and Elementor's local font cache |
+
+**Not recoverable:** article text, product reviews, and affiliate links. They lived in the database. Every post is marked **Needs text** in `/admin` until its body is written. Product cards show a "Check price" button once a link is added.
+
+> Security note: the WordPress site in the backup was compromised (backdoor mu-plugins, a hidden `system` admin user, and a modified Elementor plugin that served article URLs from an outside server). None of that code or content was carried over.
+
+## Getting started
 
 ```bash
+npm install
+cp .env.example .env.local   # fill in DATABASE_URL and BETTER_AUTH_SECRET
+npm run db:migrate           # create tables
+npm run db:seed              # load the recovered content
+npm run create-admin -- you@example.com "a-long-password" "Your Name"
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Sign in at `/sign-in`, then edit posts at `/admin`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`DATABASE_URL` can be a Neon connection string (uses the Neon HTTP driver) or any local Postgres URL (uses `pg`), so you can develop offline.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How it's organised
 
-## Learn More
+- `src/app/[slug]` serves both posts and category archives, matching WordPress's top-level URLs (`/best-polishing-machines-2026`, `/exterior`).
+- `next.config.ts` redirects the old `-2023` slugs and `/2022/12/18/...` date permalinks to their current URLs.
+- `src/app/admin` is the editor (Markdown body, product picks, publish toggle). It's protected by `src/proxy.ts` plus a server-side session check on every page and action.
+- Public sign-up is off. Editors are created with `npm run create-admin`. Set `ALLOW_SIGNUP=true` only if you want open registration.
+- `src/content/seed.json` is the recovered content; `npm run db:seed -- --force` reloads it (overwrites edits).
 
-To learn more about Next.js, take a look at the following resources:
+## Deploying (Vercel + Neon)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Create a Neon project and copy the **pooled** connection string.
+2. Import the repo in Vercel and set `DATABASE_URL`, `BETTER_AUTH_SECRET` and `BETTER_AUTH_URL` (`https://autocleaningkit.com`).
+3. Run `npm run db:migrate && npm run db:seed` once against the Neon database, then `npm run create-admin`.
+4. Point the domain at Vercel and retire the old WordPress hosting.

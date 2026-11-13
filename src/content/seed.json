@@ -1,0 +1,861 @@
+{
+ "categories": [
+  {
+   "slug": "exterior",
+   "name": "Exterior",
+   "description": "Wheels, tires and paint protection for the outside of your car."
+  },
+  {
+   "slug": "interior",
+   "name": "Interior",
+   "description": "Cleaners, carpets and care for seats, mats and dashboards."
+  },
+  {
+   "slug": "paint-correction",
+   "name": "Paint Correction",
+   "description": "Polishers, pads and applicators for a swirl-free finish."
+  },
+  {
+   "slug": "accessories",
+   "name": "Accessories",
+   "description": "Brushes, seat covers and the small tools that make detailing easier."
+  },
+  {
+   "slug": "general-accessories",
+   "name": "General Accessories",
+   "description": "Complete car cleaning kits and everyday essentials."
+  },
+  {
+   "slug": "car-detailing",
+   "name": "Car Detailing",
+   "description": "Step-by-step guides to detailing your car at home."
+  }
+ ],
+ "posts": [
+  {
+   "slug": "how-to-detail-a-car-at-home",
+   "title": "How to Detail a Car at Home",
+   "category": "car-detailing",
+   "excerpt": "The full nine-step sequence, in the right order.",
+   "featuredImage": {
+    "src": "/uploads/2026/09/how-to-detail-a-car-at-home.jpg",
+    "width": 1065,
+    "height": 710
+   },
+   "products": [],
+   "published": true,
+   "publishedAt": "2026-09-08T00:05:50+00:00"
+  },
+  {
+   "slug": "car-detailing-brushes-2026",
+   "title": "5 Car Detailing Brushes, Top Rated: Ultimate Guide for 2026",
+   "category": "accessories",
+   "excerpt": "4 picks compared side by side, with what to look for before you buy.",
+   "featuredImage": {
+    "src": "/uploads/2026/07/5-car-detailing-brush-top-rated-2026-thumbnail.jpg",
+    "width": 1065,
+    "height": 710
+   },
+   "products": [
+    {
+     "name": "Chemical Guys Goat Boars Hair Detailing Brush",
+     "image": {
+      "src": "/uploads/2022/12/Chemical-Guys-Goat-Boars-Hair-Detailing-Brush.jpeg",
+      "width": 269,
+      "height": 188
+     }
+    },
+    {
+     "name": "Carrand Vent Dash and Crevice Detailing Brush Set",
+     "image": {
+      "src": "/uploads/2022/12/Carrand-Vent-Dash-and-Crevice-Detailing-Brush-Set.jpg",
+      "width": 142,
+      "height": 320
+     }
+    },
+    {
+     "name": "SPTA Car Detailing Brush Kit",
+     "image": {
+      "src": "/uploads/2022/12/SPTA-Car-Detailing-Brush-Kit.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "Detail Buddy Natural Boar Hair Detailing Brush",
+     "image": {
+      "src": "/uploads/2022/12/Detail-Buddy-Natural-Boar-Hair-Detailing-Brush.jpeg",
+      "width": 255,
+      "height": 197
+     }
+    }
+   ],
+   "published": true,
+   "publishedAt": "2026-09-03T14:19:58+00:00"
+  },
+  {
+   "slug": "best-polishing-machines-2026",
+   "title": "Polishing Machines for Cars, Top Rated: 2026 Guide and Tips",
+   "category": "paint-correction",
+   "excerpt": "7 picks compared side by side, with what to look for before you buy.",
+   "featuredImage": {
+    "src": "/uploads/2026/07/polishing-machines-for-cars-top-rated-2026-guide-thumbnail.jpg",
+    "width": 1065,
+    "height": 710
+   },
+   "products": [
+    {
+     "name": "Adam's Swirl Killer 15mm Car Polisher",
+     "image": {
+      "src": "/uploads/2022/12/Adams-Swirl-Killer-15mm-Car-Polisher.jpg",
+      "width": 1336,
+      "height": 670
+     }
+    },
+    {
+     "name": "VonHaus Kit",
+     "image": {
+      "src": "/uploads/2022/12/VonHaus-Kit.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "DEWALT DWP849X",
+     "image": {
+      "src": "/uploads/2022/12/DEWALT-DWP849X.jpeg",
+      "width": 349,
+      "height": 144
+     }
+    },
+    {
+     "name": "Astro 3055 3 Inch Mini Air Polishing Kit",
+     "image": {
+      "src": "/uploads/2022/12/Astro-3055-3-Inch-Mini-Air-Polishing-Kit.jpeg",
+      "width": 268,
+      "height": 188
+     }
+    },
+    {
+     "name": "Chemical Guys BUF 503X TORQX Random Polisher Kit",
+     "image": {
+      "src": "/uploads/2022/12/Chemical-Guys-BUF_503X-TORQX-Random-Polisher-Kit.jpeg",
+      "width": 279,
+      "height": 181
+     }
+    },
+    {
+     "name": "BLACK+DECKER WP900",
+     "image": {
+      "src": "/uploads/2022/12/Black-Decker-WP900.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "WEN 6010 Waxer Polisher",
+     "image": {
+      "src": "/uploads/2022/12/WEN-6010-Waxer-Polisher.jpeg",
+      "width": 194,
+      "height": 259
+     }
+    }
+   ],
+   "published": true,
+   "publishedAt": "2026-09-03T14:14:01+00:00"
+  },
+  {
+   "slug": "top-polish-applicator-2023",
+   "title": "Polish Applicator for Cars, Best Polish: 2026 Guide and Tips",
+   "category": "paint-correction",
+   "excerpt": "8 picks compared side by side, with what to look for before you buy.",
+   "featuredImage": {
+    "src": "/uploads/2026/07/polish-applicator-for-cars-best-polish-2026-guide-thumbnail.jpg",
+    "width": 1065,
+    "height": 710
+   },
+   "products": [
+    {
+     "name": "Chemical Guys Hex Logic Buffing Pad Kit",
+     "image": {
+      "src": "/uploads/2022/12/Chemical-Guys-Hex-Logic-Buffing-Pad-Kit.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "Meguiar's Supreme Shine Foam Applicator Pads",
+     "image": {
+      "src": "/uploads/2022/12/Meguiars-Supreme-Shine-Foam-Applicator-Pads.jpeg",
+      "width": 259,
+      "height": 194
+     }
+    },
+    {
+     "name": "Fontic Compound Drill Buffing Sponge Pads Kit",
+     "image": {
+      "src": "/uploads/2022/12/Fontic-Compound-Drill-Buffing-Sponge-Pads-Kit.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "Griot's Garage Pad",
+     "image": {
+      "src": "/uploads/2022/12/griot-pad.jpg",
+      "width": 679,
+      "height": 389
+     }
+    },
+    {
+     "name": "Petutu Car Foam Drill Polishing Pad Kit",
+     "image": {
+      "src": "/uploads/2022/12/Petutu-Car-Foam-Drill-Polishing-Pad-Kit.jpeg",
+      "width": 210,
+      "height": 210
+     }
+    },
+    {
+     "name": "3M Perfect It Ultrafine Foam Polishing Pad",
+     "image": {
+      "src": "/uploads/2022/12/3M-Perfect-It-Ultrafine-Foam-Polishing-Pad.jpeg",
+      "width": 339,
+      "height": 149
+     }
+    },
+    {
+     "name": "TCP Global Ultimate 6 Pad Buffing and Polishing Kit",
+     "image": {
+      "src": "/uploads/2022/12/TCP-Global-Ultimate-6-Pad-Buffing-and-Polishing-Kit.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "AutoCare Microfiber Wax Applicators",
+     "image": {
+      "src": "/uploads/2022/12/AutoCare-Microfiber-Wax-Applicators.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    }
+   ],
+   "published": true,
+   "publishedAt": "2026-09-03T13:36:37+00:00"
+  },
+  {
+   "slug": "best-car-carpets-2023",
+   "title": "Top Rated Car Carpets for Cars in 2026: Comprehensive Guide and Reviews",
+   "category": "interior",
+   "excerpt": "8 picks compared side by side, with what to look for before you buy.",
+   "featuredImage": {
+    "src": "/uploads/2026/07/top-rated-car-carpets-for-cars-2026-thumbnail.jpg",
+    "width": 1065,
+    "height": 710
+   },
+   "products": [
+    {
+     "name": "OXGORD Tactical Car Floor Mats",
+     "image": {
+      "src": "/uploads/2022/12/OXGORD-Tactical-Car-Floor-Mats.jpeg",
+      "width": 236,
+      "height": 213
+     }
+    },
+    {
+     "name": "ARMOR ALL All Season Car Floor Mats",
+     "image": {
+      "src": "/uploads/2022/12/ARMOR-ALL-All-Season-Car-Floor-Mats.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "WEATHERTECH All Weather Car Floor Mats",
+     "image": {
+      "src": "/uploads/2022/12/WEATHERTECH-All-Weather-Car-Floor-Mats-1.jpeg",
+      "width": 259,
+      "height": 194
+     }
+    },
+    {
+     "name": "MOTOR TREND Two Tone Car Floor Mats",
+     "image": {
+      "src": "/uploads/2022/12/MOTOR-TREND-Two-Tone-Car-Floor-Mats.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "MOTOR TREND FlexTough Car Floor Mats",
+     "image": {
+      "src": "/uploads/2022/12/MOTOR-TREND-FlexTough-Car-Floor-Mats.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "OXGORD Luxe Car Floor Mats",
+     "image": {
+      "src": "/uploads/2022/12/OXGORD-Luxe-Car-Floor-Mats.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "FH GROUP Monster Eye Car Floor Mats",
+     "image": {
+      "src": "/uploads/2022/12/FH-GROUP-Monster-Eye-Car-Floor-Mats.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "ARMOR ALL Truck SUV Rubber Car Floor Mats",
+     "image": {
+      "src": "/uploads/2022/12/ARMOR-ALL-Truck-SUV-Rubber-Car-Floor-Mats.jpeg",
+      "width": 255,
+      "height": 197
+     }
+    }
+   ],
+   "published": true,
+   "publishedAt": "2026-09-03T14:02:01+00:00"
+  },
+  {
+   "slug": "8-best-car-seat-covers-2023",
+   "title": "8 Best Car Seat Covers for 2026: Ultimate Guide and Reviews",
+   "category": "accessories",
+   "excerpt": "8 picks compared side by side, with what to look for before you buy.",
+   "featuredImage": {
+    "src": "/uploads/2026/07/8-best-car-seat-covers-top-2026-thumbnail.jpg",
+    "width": 1065,
+    "height": 710
+   },
+   "products": [
+    {
+     "name": "Autoyouth Car Seat Covers",
+     "image": {
+      "src": "/uploads/2022/12/Autoyouth-Car-Seat-Covers.jpeg",
+      "width": 217,
+      "height": 232
+     }
+    },
+    {
+     "name": "PIC Auto Mesh and Leather Universal Fit Car Seat Covers",
+     "image": {
+      "src": "/uploads/2022/12/PIC-Auto-Mesh-and-Leather-Universal-Fit-Car-Seat-Covers.jpeg",
+      "width": 225,
+      "height": 224
+     }
+    },
+    {
+     "name": "Luckyman Club Car Seat Covers",
+     "image": {
+      "src": "/uploads/2022/12/Luckyman-Club-Car-Seat-Covers.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "BDK PolyPro Car Seat Covers",
+     "image": {
+      "src": "/uploads/2022/12/BDK-PolyPro-Car-Seat-Covers.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "Car Dress Front Seat Covers",
+     "image": {
+      "src": "/uploads/2022/12/Car-Dress-Front-Seat-Covers.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "Oasis Auto Car Seat Covers",
+     "image": {
+      "src": "/uploads/2022/12/Oasis-Auto-Car-Seat-Covers.jpeg",
+      "width": 221,
+      "height": 228
+     }
+    },
+    {
+     "name": "BDK Tan Trim Black Car Seat Covers",
+     "image": {
+      "src": "/uploads/2022/12/BDK-Tan-Trim-Black-Car-Seat-Covers.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "Red Rain Leather Car Seat Covers",
+     "image": {
+      "src": "/uploads/2022/12/Red-Rain-Leather-Car-Seat-Covers.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    }
+   ],
+   "published": true,
+   "publishedAt": "2026-09-03T13:26:09+00:00"
+  },
+  {
+   "slug": "best-car-carpet-cleaner",
+   "title": "Best Carpet Cleaner for Car: Types, Tools, and Expert Tips",
+   "category": "interior",
+   "excerpt": "8 picks compared side by side, with what to look for before you buy.",
+   "featuredImage": {
+    "src": "/uploads/2026/05/best-carpet-cleaner-for-car-thumbnail.jpg",
+    "width": 1065,
+    "height": 710
+   },
+   "products": [
+    {
+     "name": "Turtle Wax Power Out Carpet And Mat Cleaner",
+     "image": {
+      "src": "/uploads/2022/12/TURTLE-WAX-POWER-OUT-CARPET-AND-MAT-CLEANER.jpg",
+      "width": 345,
+      "height": 1500
+     }
+    },
+    {
+     "name": "Armor All Oxi Magic Carpet and Fabric Cleaner",
+     "image": {
+      "src": "/uploads/2022/12/Armor-All-Oxi-Magic-Carpet-and-Fabric-Cleaner.jpg",
+      "width": 214,
+      "height": 450
+     }
+    },
+    {
+     "name": "Mothers Carpet Cleaner",
+     "image": {
+      "src": "/uploads/2022/12/mothers-carpet-cleaner.jpg",
+      "width": 578,
+      "height": 1430
+     }
+    },
+    {
+     "name": "CarGuys Super Cleaner for Carpet Vinyl Leather and Rubber",
+     "image": {
+      "src": "/uploads/2022/12/CarGuys-Super-Cleaner-for-Carpet-Vinyl-Leather-and-Rubber.jpg",
+      "width": 1119,
+      "height": 1500
+     }
+    },
+    {
+     "name": "Chemical Guys Foaming Citrus Carpet Cleaner",
+     "image": {
+      "src": "/uploads/2022/12/Chemical-Guys-Foaming-Citrus-Carpet-Cleaner.jpg",
+      "width": 425,
+      "height": 669
+     }
+    },
+    {
+     "name": "Hoover CleanSlate Plus Portable Shampooer",
+     "image": {
+      "src": "/uploads/2022/12/Hoover-CleanSlate-Plus-Portable-Shampooer.jpg",
+      "width": 1500,
+      "height": 1103
+     }
+    },
+    {
+     "name": "Chemical Guys Lightning Fast Stain Extractor",
+     "image": {
+      "src": "/uploads/2022/12/Chemical-Guys-Lightning-Fast-Stain-Extractor.jpg",
+      "width": 320,
+      "height": 211
+     }
+    },
+    {
+     "name": "BLACK+DECKER Dustbuster Handheld",
+     "image": {
+      "src": "/uploads/2022/12/BLACKDECKER-dusbuster-Handheld.jpg",
+      "width": 217,
+      "height": 218
+     }
+    }
+   ],
+   "published": true,
+   "publishedAt": "2026-09-03T13:13:39+00:00"
+  },
+  {
+   "slug": "best-car-interior-cleaner",
+   "title": "Best Car Interior Cleaner: Top 9 Products for Leather, Fabric, and Dashboard Care in 2026",
+   "category": "interior",
+   "excerpt": "",
+   "featuredImage": {
+    "src": "/uploads/2026/08/best-car-interior-cleaner-top-9-products-2026-thumbnail-1.jpg",
+    "width": 1065,
+    "height": 710
+   },
+   "products": [],
+   "published": true,
+   "publishedAt": "2026-08-24T10:24:44+00:00"
+  },
+  {
+   "slug": "best-leather-cleaners-2026",
+   "title": "Best Car Leather Cleaners for 2026",
+   "category": "interior",
+   "excerpt": "6 picks compared side by side, with what to look for before you buy.",
+   "featuredImage": {
+    "src": "/uploads/2022/12/Leather-Honey.jpg",
+    "width": 1500,
+    "height": 607
+   },
+   "products": [
+    {
+     "name": "Leather Honey Leather Cleaner",
+     "image": {
+      "src": "/uploads/2022/12/Leather-Honey.jpg",
+      "width": 1500,
+      "height": 607
+     }
+    },
+    {
+     "name": "Lexol Conditioner and Cleaner Kit",
+     "image": {
+      "src": "/uploads/2022/12/Lexol-Conditioner-and-Cleaner-Kit.jpg",
+      "width": 425,
+      "height": 282
+     }
+    },
+    {
+     "name": "Armor All Car Leather Care Spray",
+     "image": {
+      "src": "/uploads/2022/12/Armor-All-Car-Leather-Care-Spray.jpg",
+      "width": 1455,
+      "height": 1500
+     }
+    },
+    {
+     "name": "Chemical Guys Sprayable Leather Cleaner and conditioner",
+     "image": {
+      "src": "/uploads/2022/12/Chemical-Guys-Sprayable-Leather-Cleaner-and-conditioner.jpg",
+      "width": 1418,
+      "height": 1500
+     }
+    },
+    {
+     "name": "Meguiar's Gold Class Rich Leather Cleaner",
+     "image": {
+      "src": "/uploads/2022/12/Meguiars-Gold-Class-Rich-Leather-Cleaner.webp",
+      "width": 126,
+      "height": 300
+     }
+    },
+    {
+     "name": "Adam's Leather and Interior Cleaner",
+     "image": {
+      "src": "/uploads/2022/12/Adams-Leather-and-Interior-Cleaner.jpg",
+      "width": 1500,
+      "height": 781
+     }
+    }
+   ],
+   "published": true,
+   "publishedAt": "2026-09-03T13:13:26+00:00"
+  },
+  {
+   "slug": "paint-protection-2026",
+   "title": "Best Paint Protection Products for 2026",
+   "category": "exterior",
+   "excerpt": "5 picks compared side by side, with what to look for before you buy.",
+   "featuredImage": {
+    "src": "/uploads/2022/12/TriNova-Ceramic-Spray-Coating-SiO2.jpg",
+    "width": 398,
+    "height": 1032
+   },
+   "products": [
+    {
+     "name": "TriNova Ceramic Spray Coating SiO2",
+     "image": {
+      "src": "/uploads/2022/12/TriNova-Ceramic-Spray-Coating-SiO2.jpg",
+      "width": 398,
+      "height": 1032
+     }
+    },
+    {
+     "name": "Shine Armor Polish and Polymer Paint Sealant",
+     "image": {
+      "src": "/uploads/2022/12/Shine-Armor-Polish-and-Polymer-Paint-Sealant.jpg",
+      "width": 361,
+      "height": 1392
+     }
+    },
+    {
+     "name": "Adam's Americana",
+     "image": {
+      "src": "/uploads/2022/12/adams-americana.jpg",
+      "width": 287,
+      "height": 176
+     }
+    },
+    {
+     "name": "Sonax Xtreme Brilliant Shine Detailer",
+     "image": {
+      "src": "/uploads/2022/12/Sonax-Xtreme-Brilliant-Shine-Detailer.jpg",
+      "width": 520,
+      "height": 1500
+     }
+    },
+    {
+     "name": "Auto Fanatic Ceramic Gloss Enhancer with Sprayer",
+     "image": {
+      "src": "/uploads/2022/12/Auto-Fanatic-Ceramic-Gloss-Enhancer-with-Sprayer.jpg",
+      "width": 384,
+      "height": 967
+     }
+    }
+   ],
+   "published": true,
+   "publishedAt": "2026-09-03T13:14:01+00:00"
+  },
+  {
+   "slug": "best-wheel-cleaners-for-cars-2026",
+   "title": "Best Wheel Cleaners for Cars in 2026",
+   "category": "exterior",
+   "excerpt": "5 picks compared side by side, with what to look for before you buy.",
+   "featuredImage": {
+    "src": "/uploads/2022/12/Meguiars-G180132-Ultimate-All-Wheel-Cleaner.jpg",
+    "width": 652,
+    "height": 1500
+   },
+   "products": [
+    {
+     "name": "Meguiar's G180132 Ultimate All Wheel Cleaner",
+     "image": {
+      "src": "/uploads/2022/12/Meguiars-G180132-Ultimate-All-Wheel-Cleaner.jpg",
+      "width": 652,
+      "height": 1500
+     }
+    },
+    {
+     "name": "Sonax Wheel Cleaner",
+     "image": {
+      "src": "/uploads/2022/12/Sonax-Wheel-Cleaner.jpeg",
+      "width": 224,
+      "height": 224
+     }
+    },
+    {
+     "name": "CarGuys Wheel Cleaner",
+     "image": {
+      "src": "/uploads/2022/12/Car-Guys-Wheel-Cleaner.jpeg",
+      "width": 259,
+      "height": 194
+     }
+    },
+    {
+     "name": "Chemical Guys Diablo Concentrated Wheel Cleaner",
+     "image": {
+      "src": "/uploads/2022/12/Chemical-Guys-Diablo-Concentrated-Wheel-Cleaner.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "Turtle Wax T 18 All Wheel and Tire Cleaner",
+     "image": {
+      "src": "/uploads/2022/12/Turtle-Wax-T-18-All-Wheel-and-Tire-Cleaner.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    }
+   ],
+   "published": true,
+   "publishedAt": "2026-09-03T13:12:43+00:00"
+  },
+  {
+   "slug": "9-top-grade-tire-covers-2026",
+   "title": "9 Top-Grade Tire Covers for 2026",
+   "category": "exterior",
+   "excerpt": "9 picks compared side by side, with what to look for before you buy.",
+   "featuredImage": {
+    "src": "/uploads/2022/12/AMFOR-SET-OF-4-TIRE-COVERS.jpg",
+    "width": 1500,
+    "height": 1247
+   },
+   "products": [
+    {
+     "name": "Amfor Set Of 4 Tire Covers",
+     "image": {
+      "src": "/uploads/2022/12/AMFOR-SET-OF-4-TIRE-COVERS.jpg",
+      "width": 1500,
+      "height": 1247
+     }
+    },
+    {
+     "name": "Boomerang Rigid Spare Tire Cover",
+     "image": {
+      "src": "/uploads/2022/12/Boomerang-Rigid-Best-overall-Spare-Tire-Cover.jpeg",
+      "width": 275,
+      "height": 183
+     }
+    },
+    {
+     "name": "ADCO Vinyl Spare Tire Cover",
+     "image": {
+      "src": "/uploads/2022/12/ADCO-Vinyl-Best-Vinyl-Spare-Tire-Cover.jpeg",
+      "width": 296,
+      "height": 170
+     }
+    },
+    {
+     "name": "Classic Accessories Overdrive",
+     "image": {
+      "src": "/uploads/2022/12/Classic-Accessories-Overdrive.jpeg",
+      "width": 280,
+      "height": 180
+     }
+    },
+    {
+     "name": "Moonet RV Tire Cover",
+     "image": {
+      "src": "/uploads/2022/12/Moonet-RV-Tire-Cover-Budget-option.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "Leader Accessories Universal Tire",
+     "image": {
+      "src": "/uploads/2022/12/Leader-Accessories-Universal-Tire.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "Explore Land RV Tire Cover",
+     "image": {
+      "src": "/uploads/2022/12/Explore-Land-RV-Tire-Cover.jpeg",
+      "width": 225,
+      "height": 225
+     }
+    },
+    {
+     "name": "Kohree RV Tire Covers",
+     "image": {
+      "src": "/uploads/2022/12/Kohree-RV-Tire-Covers.jpeg",
+      "width": 227,
+      "height": 222
+     }
+    },
+    {
+     "name": "Kayme RV Tire Cover",
+     "image": {
+      "src": "/uploads/2022/12/Kayme-RV-Tire-Cover.jpeg",
+      "width": 228,
+      "height": 221
+     }
+    }
+   ],
+   "published": true,
+   "publishedAt": "2026-09-03T13:11:33+00:00"
+  },
+  {
+   "slug": "car-cleaning-kits-2026",
+   "title": "Best Car Cleaning Kits for 2026",
+   "category": "general-accessories",
+   "excerpt": "5 picks compared side by side, with what to look for before you buy.",
+   "featuredImage": {
+    "src": "/uploads/2022/12/Meguiars-G55032SP-Complete-Car-Care-Kit.jpg",
+    "width": 1500,
+    "height": 1310
+   },
+   "products": [
+    {
+     "name": "Meguiar's G55032SP Complete Car Care Kit",
+     "image": {
+      "src": "/uploads/2022/12/Meguiars-G55032SP-Complete-Car-Care-Kit.jpg",
+      "width": 1500,
+      "height": 1310
+     }
+    },
+    {
+     "name": "Adam's Arsenal Builder Car Wash Kit",
+     "image": {
+      "src": "/uploads/2022/12/Adams-Arsenal-Builder-Car-Wash-Kit.jpg",
+      "width": 1500,
+      "height": 636
+     }
+    },
+    {
+     "name": "Griot's Garage 11131 Starter Car Care Kit",
+     "image": {
+      "src": "/uploads/2022/12/Griots-Garage-11131-Starter-Car-Care-Kit.webp",
+      "width": 300,
+      "height": 172
+     }
+    },
+    {
+     "name": "AUTODECO 25Pcs Microfibre Car Wash Set",
+     "image": {
+      "src": "/uploads/2022/12/AUTODECO-25Pcs-Microfibre-Car-Wash-Set.webp",
+      "width": 300,
+      "height": 297
+     }
+    },
+    {
+     "name": "Chemical Guys HOL126 14 Piece Car Wash Kit",
+     "image": {
+      "src": "/uploads/2022/12/Chemical-Guys-HOL126-14-Piece-Car-Wash-Kit.jpg",
+      "width": 1500,
+      "height": 881
+     }
+    }
+   ],
+   "published": true,
+   "publishedAt": "2026-09-03T13:13:14+00:00"
+  },
+  {
+   "slug": "best-car-cleaning-kit-2026-4",
+   "title": "Best Car Cleaning Kit 2026",
+   "category": "general-accessories",
+   "excerpt": "",
+   "featuredImage": {
+    "src": "/uploads/2022/12/Meguiars-G55032SP-Complete-Car-Care-Kit.jpg",
+    "width": 1500,
+    "height": 1310
+   },
+   "products": [],
+   "published": false,
+   "publishedAt": "2026-08-19T18:37:51+00:00"
+  }
+ ],
+ "brand": {
+  "logo": {
+   "src": "/uploads/2022/10/car-cleaning-kit-01.png",
+   "width": 1080,
+   "height": 254
+  },
+  "banners": [
+   {
+    "src": "/uploads/2023/02/auto-Cleaning-Kit_Artboard-1.png",
+    "width": 769,
+    "height": 289
+   },
+   {
+    "src": "/uploads/2023/02/auto-Cleaning-Kit_Artboard-3.png",
+    "width": 769,
+    "height": 289
+   },
+   {
+    "src": "/uploads/2023/02/auto-Cleaning-Kit_Artboard-4.png",
+    "width": 769,
+    "height": 289
+   },
+   {
+    "src": "/uploads/2023/02/auto-Cleaning-Kit_Tips.png",
+    "width": 769,
+    "height": 289
+   }
+  ],
+  "hero": {
+   "src": "/uploads/2022/09/man-polish-a-car-in-a-garage.jpg",
+   "width": 1600,
+   "height": 1066
+  }
+ }
+}
