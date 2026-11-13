@@ -116,6 +116,9 @@ export default async function SlugPage(props: PageProps<"/[slug]">) {
                 </li>
               ))}
             </ol>
+            <p className="mt-4 text-xs text-ink/50">
+              Product details and prices change. Check the retailer&apos;s listing for current specs before you buy.
+            </p>
           </section>
         )}
 

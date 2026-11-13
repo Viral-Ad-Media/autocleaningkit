@@ -11,6 +11,15 @@ async function main() {
   const { eq } = await import("drizzle-orm");
   const seed = (await import("../src/content/seed.json", { with: { type: "json" } })).default;
   const force = process.argv.includes("--force");
+  const { readFileSync, existsSync } = await import("node:fs");
+  const path = await import("node:path");
+  const notes: Record<string, string[]> = JSON.parse(
+    readFileSync(path.join(process.cwd(), "src/content/product-notes.json"), "utf8"),
+  );
+  const bodyFor = (slug: string) => {
+    const f = path.join(process.cwd(), "src/content/articles", `${slug}.md`);
+    return existsSync(f) ? readFileSync(f, "utf8").trim() : "";
+  };
 
   for (const [i, c] of seed.categories.entries()) {
     await db
@@ -30,6 +39,7 @@ async function main() {
         slug: p.slug,
         title: p.title,
         excerpt: p.excerpt,
+        body: bodyFor(p.slug),
         categorySlug: p.category,
         featuredImage: p.featuredImage,
         published: p.published,
@@ -38,7 +48,13 @@ async function main() {
       .returning({ id: schema.posts.id });
     if (p.products.length) {
       await db.insert(schema.products).values(
-        p.products.map((pr, position) => ({ postId: row.id, position, name: pr.name, image: pr.image })),
+        p.products.map((pr, position) => ({
+          postId: row.id,
+          position,
+          name: pr.name,
+          image: pr.image,
+          summary: notes[p.slug]?.[position] ?? "",
+        })),
       );
     }
     created++;

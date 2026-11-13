@@ -13,7 +13,7 @@ The backup had no database dump, so only what lived in files could be recovered:
 | 90 images, logo, home-page banners | `wp-content/uploads` (resized to max 1600px) |
 | Brand colours and the Hind typeface | Logo artwork and Elementor's local font cache |
 
-**Not recoverable:** article text, product reviews, and affiliate links. They lived in the database. Every post is marked **Needs text** in `/admin` until its body is written. Product cards show a "Check price" button once a link is added.
+**Not recoverable:** the original article text and affiliate links, which lived in the database. The articles were rewritten as new buying guides (`src/content/articles/*.md`, product blurbs in `src/content/product-notes.json`) and loaded by `npm run db:seed`. Product cards show a "Check price" button once a link is added in `/admin`.
 
 > Security note: the WordPress site in the backup was compromised (backdoor mu-plugins, a hidden `system` admin user, and a modified Elementor plugin that served article URLs from an outside server). None of that code or content was carried over.
 
