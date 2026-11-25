@@ -1,47 +1,66 @@
 import Link from "next/link";
 
-const links = [
+const categories = [
   { href: "/exterior", label: "Exterior" },
   { href: "/interior", label: "Interior" },
-  { href: "/paint-correction", label: "Paint Correction" },
+  { href: "/paint-correction", label: "Paint correction" },
   { href: "/accessories", label: "Accessories" },
-  { href: "/general-accessories", label: "General Accessories" },
-  { href: "/car-detailing", label: "Car Detailing" },
+  { href: "/general-accessories", label: "Kits and essentials" },
+  { href: "/car-detailing", label: "Car detailing" },
+];
+
+const start = [
+  { href: "/how-to-detail-a-car-at-home", label: "Detail a car at home" },
+  { href: "/car-cleaning-kits-2026", label: "Car cleaning kits" },
+  { href: "/best-polishing-machines-2026", label: "Polishing machines" },
+  { href: "/blog", label: "All guides" },
 ];
 
 export function SiteFooter() {
   return (
-    <footer className="mt-20 bg-ink text-white/80">
-      <div className="container-site grid gap-10 py-14 md:grid-cols-3">
-        <div>
-          <p className="text-lg font-bold text-white">Auto Cleaning Kit</p>
-          <p className="mt-3 max-w-xs text-sm leading-relaxed">
-            Guides and product round-ups to help you clean, polish and protect your car at home.
+    <footer className="on-dark bg-inv text-inv-ink">
+      <div className="wrap grid gap-12 py-16 md:grid-cols-12 md:py-20">
+        <div className="md:col-span-5">
+          <p className="display text-[28px] leading-tight">Auto Cleaning Kit</p>
+          <p className="mt-4 max-w-sm text-inv-muted">
+            Buying guides and step-by-step how-tos for cleaning, polishing and protecting your car at home.
           </p>
         </div>
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-wider text-white">Categories</p>
-          <ul className="mt-3 grid grid-cols-2 gap-2 text-sm">
-            {links.map((l) => (
+        <div className="md:col-span-2">
+          <p className="t-label text-inv-muted">Categories</p>
+          <ul className="mt-4 space-y-3">
+            {categories.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="hover:text-white">
+                <Link href={l.href} className="link">
                   {l.label}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
-        <div className="text-sm leading-relaxed">
-          <p className="font-semibold uppercase tracking-wider text-white">Affiliate disclosure</p>
-          <p className="mt-3">
-            As an Amazon Associate we earn from qualifying purchases. This doesn&apos;t change the price you pay.
+        <div className="md:col-span-2">
+          <p className="t-label text-inv-muted">Start here</p>
+          <ul className="mt-4 space-y-3">
+            {start.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="link">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="md:col-span-3">
+          <p className="t-label text-inv-muted">Affiliate disclosure</p>
+          <p className="mt-4 text-inv-muted">
+            As an Amazon Associate we earn from qualifying purchases. It doesn&apos;t change the price you pay.
           </p>
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="container-site flex flex-wrap items-center justify-between gap-2 py-5 text-xs text-white/50">
+        <div className="wrap flex flex-wrap items-center justify-between gap-2 py-6 text-sm text-inv-muted">
           <p>© {new Date().getFullYear()} autocleaningkit.com</p>
-          <Link href="/sign-in" className="hover:text-white">
+          <Link href="/sign-in" className="link">
             Editor sign-in
           </Link>
         </div>

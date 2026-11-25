@@ -2,42 +2,72 @@ import Image from "next/image";
 import Link from "next/link";
 import seed from "@/content/seed.json";
 
-const nav = [
+// Short one-word labels so the bar never wraps; each lands on its category archive.
+export const primaryNav = [
   { href: "/exterior", label: "Exterior" },
   { href: "/interior", label: "Interior" },
-  { href: "/paint-correction", label: "Paint Correction" },
+  { href: "/paint-correction", label: "Paint" },
   { href: "/accessories", label: "Accessories" },
-  { href: "/car-detailing", label: "Car Detailing" },
-  { href: "/blog", label: "Blog" },
+  { href: "/car-detailing", label: "How-to" },
 ];
 
 export function SiteHeader() {
   const logo = seed.brand.logo;
   return (
-    <header className="sticky top-0 z-40 border-b border-black/5 bg-white/95 backdrop-blur">
-      <div className="container-site flex h-16 items-center justify-between gap-6">
+    <header className="sticky top-0 z-40 border-b border-line bg-ground">
+      <div className="wrap flex h-(--nav) items-center justify-between gap-6">
+        <a className="skip-link" href="#top">
+          Skip to content
+        </a>
         <Link href="/" className="shrink-0" aria-label="Auto Cleaning Kit home">
-          <Image src={logo.src} width={logo.width} height={logo.height} alt="Car Cleaning Kit" priority className="h-10 w-auto sm:h-11" />
+          <Image
+            src={logo.src}
+            width={logo.width}
+            height={logo.height}
+            alt="Car Cleaning Kit"
+            priority
+            className="h-9 w-auto sm:h-10"
+          />
         </Link>
-        <nav className="hidden items-center gap-6 text-[15px] font-medium lg:flex">
-          {nav.map((n) => (
-            <Link key={n.href} href={n.href} className="text-ink/80 transition-colors hover:text-brand-500">
+
+        <nav aria-label="Main" className="hidden items-center gap-8 text-[15px] font-medium lg:flex">
+          {primaryNav.map((n) => (
+            <Link key={n.href} href={n.href} className="link whitespace-nowrap text-ink">
               {n.label}
             </Link>
           ))}
         </nav>
-        <details className="group relative lg:hidden">
-          <summary className="flex cursor-pointer list-none items-center rounded-md p-2 text-ink hover:bg-brand-50" aria-label="Menu">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-              <path d="M4 7h16M4 12h16M4 17h16" />
+
+        <div className="hidden lg:block">
+          <Link href="/blog" className="btn btn--primary h-11">
+            All guides
+          </Link>
+        </div>
+
+        <details className="group lg:hidden">
+          <summary
+            className="flex size-11 cursor-pointer list-none items-center justify-center rounded-sm text-ink hover:bg-surface [&::-webkit-details-marker]:hidden"
+            aria-label="Open the menu"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" aria-hidden="true">
+              <path className="group-open:hidden" d="M4 7h16M4 12h16M4 17h16" />
+              <path className="hidden group-open:block" d="M6 6l12 12M18 6L6 18" />
             </svg>
           </summary>
-          <nav className="absolute right-0 mt-2 w-56 rounded-lg border border-black/5 bg-white p-2 shadow-lg">
-            {nav.map((n) => (
-              <Link key={n.href} href={n.href} className="block rounded-md px-3 py-2 font-medium hover:bg-brand-50 hover:text-brand-600">
-                {n.label}
+          <nav
+            aria-label="Main"
+            className="fixed inset-x-0 top-(--nav) bottom-0 overflow-y-auto border-t border-line bg-ground"
+          >
+            <div className="wrap flex flex-col py-6">
+              {primaryNav.map((n) => (
+                <Link key={n.href} href={n.href} className="t-h3 border-b border-line py-4 text-ink">
+                  {n.label}
+                </Link>
+              ))}
+              <Link href="/blog" className="btn btn--primary mt-8 w-full">
+                All guides
               </Link>
-            ))}
+            </div>
           </nav>
         </details>
       </div>

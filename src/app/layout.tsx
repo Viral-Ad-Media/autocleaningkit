@@ -1,19 +1,21 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
+import type { Metadata, Viewport } from "next";
+import { Bricolage_Grotesque, Figtree } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import "./globals.css";
 
-const hind = localFont({
-  variable: "--font-hind",
+// Display face for headings, text face for everything else (two families, fixed jobs).
+const display = Bricolage_Grotesque({
+  variable: "--font-display-face",
+  subsets: ["latin"],
   display: "swap",
-  src: [
-    { path: "../fonts/hind-300.woff2", weight: "300" },
-    { path: "../fonts/hind-400.woff2", weight: "400" },
-    { path: "../fonts/hind-500.woff2", weight: "500" },
-    { path: "../fonts/hind-600.woff2", weight: "600" },
-    { path: "../fonts/hind-700.woff2", weight: "700" },
-  ],
+  axes: ["opsz", "wdth"],
+});
+const text = Figtree({
+  variable: "--font-text",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -24,12 +26,16 @@ export const metadata: Metadata = {
   openGraph: { siteName: "Auto Cleaning Kit", type: "website" },
 };
 
+export const viewport: Viewport = { themeColor: "#f3f3f0" };
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={hind.variable}>
+    <html lang="en" className={`${display.variable} ${text.variable}`}>
       <body className="flex min-h-screen flex-col">
         <SiteHeader />
-        <main className="flex-1">{children}</main>
+        <main id="top" className="flex-1">
+          {children}
+        </main>
         <SiteFooter />
       </body>
     </html>
