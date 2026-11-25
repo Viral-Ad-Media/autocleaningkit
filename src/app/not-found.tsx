@@ -2,13 +2,18 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="container-site py-24 text-center">
-      <p className="text-sm font-semibold uppercase tracking-wider text-brand-500">404</p>
-      <h1 className="mt-2 text-3xl font-bold">We couldn&apos;t find that page</h1>
-      <p className="mt-3 text-ink/70">It may have moved when the site was rebuilt.</p>
-      <Link href="/blog" className="mt-6 inline-block rounded-full bg-brand-500 px-6 py-3 font-semibold text-white hover:bg-brand-600">
-        Browse all guides
-      </Link>
+    <div className="wrap py-24 md:py-36">
+      <p className="t-label text-muted">Page not found</p>
+      <h1 className="t-h1-page mt-5 max-w-[18ch]">We couldn&apos;t find that page.</h1>
+      <p className="t-lead measure mt-5 text-ink/80">It may have moved when the site was rebuilt. Every guide is still listed on one page.</p>
+      <div className="btn-row mt-8 flex flex-wrap gap-3">
+        <Link href="/blog" className="btn btn--primary">
+          Browse all guides
+        </Link>
+        <Link href="/" className="btn btn--secondary">
+          Go to the home page
+        </Link>
+      </div>
     </div>
   );
 }

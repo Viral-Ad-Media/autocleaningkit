@@ -1,4 +1,4 @@
-import { and, asc, desc, eq } from "drizzle-orm";
+import { and, asc, count, countDistinct, desc, eq } from "drizzle-orm";
 import { db, schema } from "@/db";
 
 const { posts, categories, products } = schema;
@@ -28,3 +28,13 @@ export async function getPublishedPost(slug: string) {
 }
 
 export type PostWithCategory = Awaited<ReturnType<typeof getPublishedPosts>>[number];
+
+/** Counts for the home page: published guides and the product picks inside them. */
+export async function getStats() {
+  const [row] = await db
+    .select({ guides: countDistinct(posts.id), picks: count(products.id) })
+    .from(posts)
+    .leftJoin(products, eq(products.postId, posts.id))
+    .where(eq(posts.published, true));
+  return { guides: Number(row?.guides ?? 0), picks: Number(row?.picks ?? 0) };
+}

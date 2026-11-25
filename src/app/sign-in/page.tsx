@@ -11,9 +11,9 @@ export default async function SignInPage(props: PageProps<"/sign-in">) {
   if (await getSession()) redirect(dest);
   return (
     <div className="container-site flex justify-center py-20">
-      <div className="w-full max-w-sm rounded-2xl border border-black/5 bg-white p-8 shadow-sm">
-        <h1 className="text-2xl font-bold">Editor sign-in</h1>
-        <p className="mt-1 text-sm text-ink/60">Manage guides and product picks.</p>
+      <div className="w-full max-w-sm rounded-lg border border-line bg-card p-8">
+        <h1 className="t-h3">Editor sign-in</h1>
+        <p className="mt-1 text-muted">Manage guides and product picks.</p>
         <SignInForm next={dest} />
       </div>
     </div>
